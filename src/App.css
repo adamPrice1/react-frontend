@@ -1,0 +1,25 @@
+.root {
+  width: 90%;
+  height: 90%;
+}
+
+.App {
+  text-align: center;
+}
+
+.post-container{
+  margin: 10%;
+  background-color: grey;
+  text-align: left;
+  padding: 10px;
+}
+
+.header {
+  background-color: grey;
+}
+
+.post {
+  text-align: justify;
+  margin: 5%;
+  background-color: white;
+}
