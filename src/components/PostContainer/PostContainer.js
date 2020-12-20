@@ -1,12 +1,16 @@
 import React from "react";
-import Post from '../Post'
+import Post from '../Post';
+import ExpandedPost from '../ExpandedPost'
+import samplePosts from '../../samplePosts.json'
 
 const PostContainer = (props) => {
+
   return (
-    <div class="post-container col-md-5">
-      {props.posts.map( post => {
+    <div className="post-container col-md-5">
+      {samplePosts.map( post => {
         return (<Post
-          key={post.title}
+          key={post.id}
+          id= {post.id}
           title={post.title}
           content={post.content}
                 />)

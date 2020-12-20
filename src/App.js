@@ -1,42 +1,28 @@
 import './App.css';
 import React from "react";
 import PostContainer from './components/PostContainer'
+import ExpandedPost from './components/ExpandedPost'
 import Header from './components/Header'
+import About from './components/About'
+import Profile from './components/Profile'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 function App() {
 
-  const samplePosts = [
-    {
-      title: "post 1",
-      content: "this is post 1s content"
-    },
-    {
-      title: "post 2",
-      content: "this is post 2s content"
-    },
-    {
-      title: "post 3",
-      content: "this is post 3s content"
-    },
-    {
-      title: "post 4",
-      content: "this is post 4s content"
-    },
-    {
-      title: "post 5",
-      content: "this is post 5s content"
-    },
-    {
-      title: "post 6",
-      content: "this is post 6s content"
-    },
-  ]
+
 
   return (
     <>
-      <Header />
-      <div className="App">
-        <PostContainer posts={samplePosts} />
-      </div>
+      <Router>
+        <Header />
+        <Switch>
+        <div className="App">
+          <Route path="/" exact component={PostContainer} />
+          <Route path="/posts/:id" component={ExpandedPost} />
+          <Route path="/about" component={About} />
+          <Route path="/profile" component={Profile} />
+        </div>
+        </Switch>
+      </Router>
     </>
   );
 }

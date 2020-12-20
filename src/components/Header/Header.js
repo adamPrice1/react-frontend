@@ -1,21 +1,17 @@
 import React from "react";
-
+import PostContainer from '../PostContainer';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 const Header = () => {
 
-  var menuItems = [
-    "home",
-    "login",
-    "signup",
-    "profile"
-  ]
+
   return (
+
     <div className="header navbar">
-      {
-      menuItems.map( item => {
-        return <a key={item} href="https://google.com" > {item} </a>
-      })
-    }
+      <Link to="/"> Home </Link>
+      <Link to="/profile"> Profile </Link>
+      <Link to="/about"> About </Link>
     </div>
+
   );
 };
 

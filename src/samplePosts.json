@@ -1,0 +1,30 @@
+[{
+  "id": 1,
+  "title": "post 1",
+  "content": "this is post 1s content"
+},
+{
+  "id": 2,
+  "title": "post 2",
+  "content": "this is post 2s content"
+},
+{
+  "id": 3,
+  "title": "post 3",
+  "content": "this is post 3s content"
+},
+{
+  "id": 4,
+  "title": "post 4",
+  "content": "this is post 4s content"
+},
+{
+  "id": 5,
+  "title": "post 5",
+  "content": "this is post 5s content"
+},
+{
+  "id": 6,
+  "title": "post 6",
+  "content": "this is post 6s content"
+}]
